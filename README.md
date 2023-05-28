@@ -205,8 +205,10 @@ I would like to thank [Okwuose Ehiedu](https://www.linkedin.com/in/okwuose-ehied
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **how do I dynamically import multiple images within my project directory?**
+- **How do I dynamically import multiple images within my project directory?**
+
     - I used the [require.context](https://webpack.js.org/guides/dependency-management/#requirecontext) method to dynamically import multiple images within my project directory.
+    
     ```js
     const importAll = (r) => {
       const images = {};

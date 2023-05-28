@@ -8,6 +8,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [📷 Screenshots](#screenshots)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -49,6 +50,26 @@
 
 
 - [Live Demo Link](https://fmanimashaun.github.io/yumeats/)
+
+## 📷 Screenshots <a name="screenshots"></a>
+
+### Desktop <a name="#desktop"></a>
+
+<p align="center">
+  <img width="1200" src="screenshots/desktop.png">
+</P>
+
+### Tablet <a name="#tablet"></a>
+
+<p align="center">
+  <img width="600" src="screenshots/tablet.png">
+</P>
+
+### Mobile <a name="#mobile"></a>
+
+<p align="center">
+  <img width="300" src="screenshots/mobile.png">
+</P>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

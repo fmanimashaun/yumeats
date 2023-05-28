@@ -205,13 +205,31 @@ I would like to thank [Okwuose Ehiedu](https://www.linkedin.com/in/okwuose-ehied
 
 ## ❓ FAQ (OPTIONAL) <a name="faq"></a>
 
-- **How is the ranking of the cryptocurrency exchanges determined?**
+- **how do I dynamically import multiple images within my project directory?**
+    - I used the [require.context](https://webpack.js.org/guides/dependency-management/#requirecontext) method to dynamically import multiple images within my project directory.
+    ```js
+    const importAll = (r) => {
+      const images = {};
+      r.keys().forEach((key) => {
+        const imageName = key.replace(/^.+\/([^/]+)\.[^.]+$/, '$1'); // Extracts the image name from the path
+        images[imageName] = {
+          name: imageName.replace(/_/g, ' '), // Replaces underscores with spaces
+          path: r(key),
+        };
+      });
+      return Object.values(images);
+    };
 
-  - The ranking of the exchanges is determined based on their trading volume, as reported by the CoinGecko API, which aggregates data from various sources. The app ranks the exchanges by their trading volume over a 24-hour period.
+    // then you can call the function inside your component
 
-- **Can I search for specific exchanges on the app?**
+    const Slider = () => {
+      const ImagesArray = importAll(
+        require.context('path to image folder', false, /\.(png|jpe?g|svg)$/),
+      );
 
-  - Yes, you can! The app includes a search bar that allows you to search for exchanges by name. Simply type in the name of the exchange you're looking for, and the app will display a list of all exchanges that match your search query.
+      // rest of your code
+    };
+    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

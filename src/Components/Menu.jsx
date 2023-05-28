@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import { mealData } from 'data/data';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 
@@ -55,7 +55,7 @@ const Menu = () => {
       <h3 className="text-orange-500 font-bold text-2xl text-center py-2">
         Our Meals
       </h3>
-      <div className="flex flex-col lg:flex-row justify-center mb-4">
+      <div className="flex justify-center mb-4">
         <button
           className={
             activeCategory === 'All'
@@ -63,7 +63,8 @@ const Menu = () => {
               : 'bg-orange-700 m-1 border-orange-700 text-white hover:bg-white hover:text-orange-700'
           }
           type="button"
-          onClick={() => filterMeal('All')}>
+          onClick={() => filterMeal('All')}
+        >
           All
         </button>
         <button
@@ -73,7 +74,8 @@ const Menu = () => {
               : 'bg-orange-700 m-1 border-orange-700 text-white hover:bg-white hover:text-orange-700'
           }
           type="button"
-          onClick={() => filterMeal('Pizza')}>
+          onClick={() => filterMeal('Pizza')}
+        >
           Pizza
         </button>
         <button
@@ -83,7 +85,8 @@ const Menu = () => {
               : 'bg-orange-700 m-1 border-orange-700 text-white hover:bg-white hover:text-orange-700'
           }
           type="button"
-          onClick={() => filterMeal('Chicken')}>
+          onClick={() => filterMeal('Chicken')}
+        >
           Chicken
         </button>
         <button
@@ -93,7 +96,8 @@ const Menu = () => {
               : 'bg-orange-700 m-1 border-orange-700 text-white hover:bg-white hover:text-orange-700'
           }
           type="button"
-          onClick={() => filterMeal('Salad')}>
+          onClick={() => filterMeal('Salad')}
+        >
           Salad
         </button>
       </div>
@@ -101,7 +105,8 @@ const Menu = () => {
         {meals.map((item) => (
           <div
             key={item.id}
-            className="border-none hover:scale-105 duration-330">
+            className="border-none hover:scale-105 duration-330"
+          >
             <img
               src={item.img}
               alt={item.name}
@@ -115,8 +120,10 @@ const Menu = () => {
             </div>
             <button
               type="button"
-              className="flex items-center px-4 -mt-2 border-none cursor-pointer text-indigo-600 text-center">
-              View More <HiArrowNarrowRight className="w-5 ml-2" />
+              className="flex items-center px-4 -mt-2 border-none cursor-pointer text-indigo-600 text-center"
+            >
+              View More
+              <HiArrowNarrowRight className="w-5 ml-2" />
             </button>
           </div>
         ))}

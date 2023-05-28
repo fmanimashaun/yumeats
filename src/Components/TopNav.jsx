@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-import {
-  AiOutlineClose,
-  AiOutlineMenu,
-  AiOutlineSearch,
-} from 'react-icons/ai';
+import { AiOutlineClose, AiOutlineMenu, AiOutlineSearch } from 'react-icons/ai';
 import { BsFillCartFill, BsPerson } from 'react-icons/bs';
 import { TbTruckReturn } from 'react-icons/tb';
 import { FaGoogleWallet } from 'react-icons/fa';
@@ -17,7 +13,8 @@ const TopNav = () => {
         <button
           onClick={() => setShowSideNav(!showSideNav)}
           type="button"
-          className="p-0 rounded-none border-none cursor-pointer">
+          className="p-0 rounded-none border-none cursor-pointer"
+        >
           <AiOutlineMenu size={25} />
         </button>
 
@@ -34,7 +31,8 @@ const TopNav = () => {
       </div>
       <label
         htmlFor="search"
-        className="bg-gray-200 rounded-full flex items-center px-2 w-[200px] md:w-[400px] lg:[500px]">
+        className="bg-gray-200 rounded-full flex items-center px-2 w-[200px] md:w-[400px] lg:[500px]"
+      >
         <AiOutlineSearch size={25} className="cursor-pointer" />
         <input
           type="text"
@@ -46,21 +44,32 @@ const TopNav = () => {
       </label>
       <button
         type="button"
-        className="bg-orange-700 text-white hidden md:flex items-center rounded-full py-2">
+        className="bg-orange-700 text-white hidden md:flex items-center rounded-full py-2"
+      >
         <BsFillCartFill size={20} />
         Cart
       </button>
       {showSideNav && (
         <div
-          className="bg-black/60 fixed w-full h-screen z-100 top-0 left-0"
-          onClick={() => setShowSideNav(!showSideNav)}></div>
+          className="bg-black/60 fixed w-full h-screen z-10 top-0 left-0"
+          onClick={() => setShowSideNav(!showSideNav)}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              setShowSideNav(!showSideNav);
+            }
+          }}
+          aria-label="Toggle Side Navigation"
+        />
       )}
       <div
         className={
           showSideNav
             ? 'fixed z-10 top-0 left-0 bg-white w-[300px] h-screen duration-200'
             : 'fixed z-10 top-0 left-[-100%] bg-white w-[300px] h-screen duration-200'
-        }>
+        }
+      >
         <div className="flex justify-between items-center p-4">
           <span className="text-xl md:text-2xl lg:text-3xl px-2">
             Yum
@@ -69,7 +78,8 @@ const TopNav = () => {
           <button
             onClick={() => setShowSideNav(!showSideNav)}
             type="button"
-            className="p-0 rounded-none border-none cursor-pointer">
+            className="p-0 rounded-none border-none cursor-pointer"
+          >
             <AiOutlineClose size={25} />
           </button>
         </div>

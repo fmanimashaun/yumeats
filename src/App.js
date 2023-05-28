@@ -4,6 +4,8 @@ import Featured from 'Components/Featured';
 import QuickDelivery from 'Components/QuickDelivery';
 import TopPicks from 'Components/TopPicks';
 import Menu from 'Components/Menu';
+import Categories from 'Components/Categories';
+import Footer from 'Components/Footer';
 
 function App() {
   return (
@@ -16,8 +18,9 @@ function App() {
         <QuickDelivery />
         <TopPicks />
         <Menu />
+        <Categories />
       </main>
-      
+      <Footer />
     </>
   );
 }

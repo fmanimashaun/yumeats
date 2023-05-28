@@ -1,12 +1,6 @@
 ![](https://img.shields.io/badge/fmanimashaun-green)
 <a name="readme-top"></a>
 
-<div align="center">
-  <img src="src/assets/images/logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-</div>
-
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -31,39 +25,30 @@
 
 # 📖 YumEats <a name="about-project"></a>
 
-**Cryptorank App** is a web app that lists all cryptocurrency exchanges and their respective ranking in the global cryptocurrency market. Users can click on an exchange to view more detailed information about it, including its trading volume, fees, supported cryptocurrencies, and user reviews.
+**YumEats** it is a simple landing page for a resturant that offers a variety of dishes. it is built using react and styled using tailwindcss. using tailwindcss, the app is responsive and can be viewed on any device.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 - [React](https://reactjs.org/)
-- [React Router Dom](https://reactrouter.com/web/guides/quick-start)
-- [React Bootstrap](https://react-bootstrap.github.io/)
-- [Redux Toolkit](https://redux-toolkit.js.org/)
-- [React Redux](https://react-redux.js.org/)
-- [Redux-toolkit](https://redux-toolkit.js.org/)
-- [Axios](https://axios-http.com/)
-- [Bootstrap](https://getbootstrap.com/)
 - [React Icons](https://react-icons.github.io/react-icons/)
-- [PropTypes](https://www.npmjs.com/package/prop-types)
-- [Sass](https://sass-lang.com/)
-- [Redux Logger](https://github.com/LogRocket/redux-logger)
+- [tailwindcss](https://tailwindcss.com/)
+- [postcss](https://postcss.org/)
+- [gh-pages](https://www.npmjs.com/package/gh-pages)
 
 ### Key Features <a name="key-features"></a>
 
-- [ ] View a list of all cryptocurrency exchanges with their respective rankings in the global cryptocurrency market.
-- [ ] Click on an exchange to view more detailed information about it.
-- [ ] The app enables users to search for specific cryptocurrency exchanges easily.
-- [ ] View real-time exchange data using the app's integration with the CoinGecko API.
-- [ ] User-friendly interface and responsive design for desktop and mobile devices.
+- The app is responsive and can be viewed on any device.
+- The app is built using react and styled using tailwindcss.
+- The app is deployed to github pages.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://fmanimashaun.github.io/Cryptorank-app/)
+- [Live Demo Link](https://fmanimashaun.github.io/yumeats/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -82,8 +67,8 @@ Clone this repository to your desired folder:
 
 ```sh
   cd your-desired-folder
-  git clone https://github.com/fmanimashaun/cryptorank-hub.git
-  open the repo folder `bookstore-cms`
+  git clone https://github.com/fmanimashaun/yumeats.git
+  open the repo folder `yumeats`
 ```
 
 ### Install <a name="install"></a>
@@ -103,7 +88,7 @@ To run the project, execute the following command:
 ```
 
 Runs the app in the development mode.\
-Open [http://localhost:3000/cryptorank-hub](http://localhost:3000/cryptorank-hub) to view it in your browser.
+Open [http://localhost:3000/cryptorank-hub](http://localhost:3000/yumeats) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
@@ -165,10 +150,12 @@ See the section about [github page deployment](https://github.com/gitname/react-
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] Display a list of all cryptocurrencies and their respective rankings in the global cryptocurrency market.
-- [ ] Click on a cryptocurrency to view more detailed information about it.
-- [ ] The app enables users to search for specific cryptocurrencies easily.
-- [ ] View real-time cryptocurrency data using the app's integration with the CoinGecko API.
+- [ ] add to cart functionality
+- [ ] add checkout functionality
+- [ ] add payment functionality
+- [ ] add order tracking functionality
+- [ ] add user authentication functionality
+- [ ] add admin dashboard functionality
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -190,7 +177,7 @@ If you like this project and want to support me, you can give a ⭐️ to this r
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank [Microverse](https://www.microverse.org/) for giving me this opportunity to learn and build this project. And also, I would like to thank [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on Behance for providing the design of this project.
+I would like to thank [Okwuose Ehiedu](https://www.linkedin.com/in/okwuose-ehiedu-7b8923198/) for resources
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -109,7 +109,7 @@ To run the project, execute the following command:
 ```
 
 Runs the app in the development mode.\
-Open [http://localhost:3000/cryptorank-hub](http://localhost:3000/yumeats) to view it in your browser.
+Open [http://localhost:3000/yumeats](http://localhost:3000/yumeats) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
